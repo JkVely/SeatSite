@@ -1,0 +1,320 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f4f7fa;
+    color: #a5a5a5;
+}
+
+header,
+footer {
+    background-color: #001e3f;
+    text-align: center;
+    padding: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: royalblue;
+    margin-bottom: 0.5em;
+}
+
+#roles,
+#auth,
+#info {
+    margin-bottom: 2.5em;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: royalblue;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #001e3f;
+    box-shadow: 0px 15px 20px rgba(0, 123, 255, 0.4);
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+select {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.dark-mode {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    color: #ffffff;
+    background-color: #333;
+}
+
+.dark-mode h1,
+h2 {
+    color: #e0e0e0;
+}
+
+.dark-mode h3 {
+    color: #21262b;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+    box-shadow: 0px 15px 20px rgba(102, 102, 102, 0.4);
+}
+
+/* The switch container */
+.switch {
+    --transition: 300ms;
+    --transition500: 500ms;
+    --color-dark: rgb(0, 11, 31);
+    --color-darkGray: #001e3f;
+    --color-gray: #007bff;
+    --color-offwhite: #cecece;
+    --shadow-color: var(--color-dark);
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: fit-content;
+    background-color: var(--color-dark);
+    border-radius: 30px;
+    padding: 4px;
+    transition: var(--transition500);
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Svg styles */
+.switch .svg {
+    transition: var(--transition);
+    position: absolute;
+    left: 5px;
+}
+
+.switch .moon {
+    width: 18px;
+    fill: var(--color-gray);
+    opacity: 1;
+}
+
+.switch .sun {
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: calc(100% - 21.5px);
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.8;
+    opacity: 0;
+}
+
+.switch .sun .dot {
+    position: relative;
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--color-dark);
+    background: white;
+    z-index: 1;
+    box-shadow: 11px 0px 0px var(--shadow-color),
+        10.3px 0px 0px var(--shadow-color), -11px 0px 0px var(--shadow-color),
+        -10.3px 0px 0px var(--shadow-color), 0px -11px 0px var(--shadow-color),
+        0px -10.3px 0px var(--shadow-color), 0px 11px 0px var(--shadow-color),
+        0px 10.3px 0px var(--shadow-color), 8px 8px 0px var(--shadow-color),
+        7.3px 7.3px 0px var(--shadow-color), 8px -8px 0px var(--shadow-color),
+        7.3px -7.3px 0px var(--shadow-color), -8px -8px 0px var(--shadow-color),
+        -7.3px -7.3px 0px var(--shadow-color), -8px 8px 0px var(--shadow-color),
+        -7.3px 7.3px 0px var(--shadow-color);
+}
+
+.switch .sun .dot::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid var(--color-dark);
+}
+
+/*checkbox styles */
+.switch .circle {
+    appearance: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    left: 0;
+    background-color: var(--color-darkGray);
+    border: 1px solid var(--color-darkGray);
+    transition: var(--transition500);
+    box-shadow: 1px 1px 20px 3px var(--color-darkGray);
+}
+
+.switch:has(.circle:checked) {
+    background: var(--color-offwhite);
+}
+
+.switch .circle:hover {
+    margin-left: 3px;
+}
+
+.switch .circle:checked:hover {
+    margin-left: -3px;
+}
+
+.switch .circle:checked {
+    left: calc(100% - 24px);
+    background: white;
+    border-color: white;
+    box-shadow: 1px 1px 30px 12px white;
+}
+
+.switch:has(.circle:checked)>.sun {
+    opacity: 1;
+}
+
+.switch:has(.circle:checked)>.moon {
+    opacity: 0;
+}
+
+.menu .link svg {
+    width: 14px;
+    height: 14px;
+    fill: #007bff;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.menu .item {
+    position: relative;
+}
+
+.menu .item .submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    border-radius: 0 0 16px 16px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+    pointer-events: none;
+    list-style: none;
+}
+
+.menu .item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+    border-top: transparent;
+    border-color: #007bff;
+}
+
+.menu .item:hover .link {
+    color: #ffffff;
+    border-radius: 16px 16px 0 0;
+}
+
+.menu .item:hover .link::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.menu .item:hover .link svg {
+    fill: #ffffff;
+    transform: rotate(-180deg);
+}
+
+.submenu .submenu-item {
+    width: 100%;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-link {
+    display: block;
+    padding: 12px 24px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-item:last-child .submenu-link {
+    border-bottom: none;
+}
+
+.submenu .submenu-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    width: 100%;
+    height: 100%;
+    background-color: #007bff;
+    z-index: -1;
+    transform-origin: left;
+    transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-link:hover:before {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.submenu .submenu-link:hover {
+    color: #ffffff;
+}
