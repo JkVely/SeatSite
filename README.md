@@ -102,12 +102,10 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE
 Contacto
 Para más información, puedes contactarnos a través de correo electrónico.
 
-[!NOTE]
+> [!NOTE]
+> Este proyecto está en constante desarrollo. Agradecemos tus sugerencias y comentarios para mejorar SeatSite.
 
-Este proyecto está en constante desarrollo. Agradecemos tus sugerencias y comentarios para mejorar SeatSite.
-
-[!TIP]
-
-Asegúrate de mantener tu entorno de desarrollo actualizado para evitar problemas de compatibilidad.
+> [!TIP]
+> Asegúrate de mantener tu entorno de desarrollo actualizado para evitar problemas de compatibilidad.
 
 ¡Gracias por usar SeatSite!
