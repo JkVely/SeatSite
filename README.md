@@ -140,6 +140,6 @@ Para más información, puedes contactarnos a través de correo electrónico.
 
 ## Autores
 
-- Juan Carlos Quintero Rubiano
+- [Juan Carlos Quintero Rubiano](https://github.com/JkVely)
 - Giovanny Sierra Reina
 - Juan David Campos Salcedo
