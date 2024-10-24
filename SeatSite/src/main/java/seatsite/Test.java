@@ -1,4 +1,4 @@
-package com.seatsite.seatsite;
+package seatsite;
 
 public class Test {
     public static void main(String[] args) {

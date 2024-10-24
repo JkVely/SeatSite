@@ -1,4 +1,4 @@
-package com.seatsite.seatsite.resources;
+package seatsite.resources;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

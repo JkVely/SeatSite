@@ -1,4 +1,4 @@
-package com.seatsite.seatsite;
+package seatsite;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
