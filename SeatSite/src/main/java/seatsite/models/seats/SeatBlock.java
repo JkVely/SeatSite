@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package seatsite.models;
+package seatsite.models.seats;
 import java.util.ArrayList;
 /**
  *

@@ -1,4 +1,4 @@
-package seatsite.models;
+package seatsite.models.seats;
 
 import java.util.ArrayList;
 
